@@ -1,0 +1,14 @@
+create a product
+curl -X POST http://localhost:3000/products -H "Content-Type: application/json" -d '{"title": "Product1", "description": "Description of Product1", "price": 100}'
+
+get all products
+curl http://localhost:3000/products
+
+get single product
+curl http://localhost:3000/products/<product_id>
+
+update a product
+curl -X PUT http://localhost:3000/products/<product_id> -H "Content-Type: application/json" -d '{"title": "Updated Product", "description": "Updated Description", "price": 150}'
+
+delete a product
+curl -X DELETE http://localhost:3000/products/<product_id>
